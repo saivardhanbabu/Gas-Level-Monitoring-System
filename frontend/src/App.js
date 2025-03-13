@@ -8,7 +8,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`http://${ESP32_IP}/data`, {
+        const response = await fetch(`https://${ESP32_IP}/data`, {
           mode: "cors",
         });
 
