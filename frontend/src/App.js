@@ -3,12 +3,12 @@ import React, { useState, useEffect } from "react";
 function App() {
   const [sensorData, setSensorData] = useState(null);
   const [background, setBackground] = useState("#f8f9fa"); // Default background
-  const ESP32_IP = "10.28.167.178"; // Replace with your ESP32 IP
+  const ESP32_IP = "https://cb24-2401-4900-676a-9613-515d-2b9b-150c-f3b5.ngrok-free.app"; // Replace with your ESP32 IP
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`https://${ESP32_IP}/data`, {
+        const response = await fetch(`${ESP32_IP}/data`, {
           mode: "cors",
         });
 
