@@ -8,7 +8,7 @@ function App() {
   const [sensorData, setSensorData] = useState(null);
   const [background, setBackground] = useState("#f8f9fa");
   const [ppmHistory, setPpmHistory] = useState([]);
-  const ESP32_IP = "https://mails-separate-costume-mono.trycloudflare.com";
+  const ESP32_IP = "https://wrapped-nonprofit-partner-bizarre.trycloudflare.com";
 
   useEffect(() => {
     const fetchData = async () => {
